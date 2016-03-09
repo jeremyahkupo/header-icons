@@ -1,12 +1,12 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Merriweather", serif;
+  margin: 0;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 
 header {
   background-color: #d05c2e;
@@ -39,27 +39,40 @@ body {
 
 nav {
   display: block;
-  padding: 0.1em;
   text-align: center;
-  text-indent: 4em;
+  margin: 0;
+  overflow: hidden;
+  border-top: 1px solid #a63f38;
+  border-right: 1px solid #a63f38;
+  border-bottom: 1px solid #a63f38;
 }
 
 nav li {
   display: inline-block;
   list-style-type: none;
-  html {
-  	box-sizing: border-box;
-  }
-
-  *, *::before, *::after {
-  	box-sizing: inherit;
-  }
-
+  padding: .5em;
+  float: left;
+  width: 33.33%;
+  background-color: #d05c2e;
+  text-align: center;
+  margin-left: 0;
+  margin: 0;
 }
 
 nav li a {
   color: #fff;
   text-decoration: none;
   font-size: 1.125em;
-  padding; 2em;
+  padding: 1em;
+  margin-left: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li:hover {
+  background-color: #a63f38;
+  margin-left: 0;
 }
